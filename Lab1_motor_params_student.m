@@ -17,8 +17,6 @@ motor_B = 0.0001;
 % Extract collected data
 % Input_DATA = load("C:\Users\Akkarasaknarong\Documents\GitHub\LAB_Control_Data\Data_for_Estimation\Sinewave\Sinewave_1Hz_Rec1.mat") ;
 
-Input_Data = load("Sinewave_1Hz_Rec2.mat") ;
-
 Input = squeeze(data{2}.Values.Data);
 Time = squeeze(data{1}.Values.Time);
 Velo = squeeze(double(data{1}.Values.Data));
