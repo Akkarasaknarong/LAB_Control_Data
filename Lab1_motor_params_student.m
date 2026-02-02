@@ -15,11 +15,13 @@ motor_J = 0.001;
 motor_B = 0.0001;
 
 % Extract collected data
-Input_DATA = load("C:\Users\Akkarasaknarong\Documents\GitHub\LAB_Control_Data\Data_for_Estimation\TEST_DATA_1.mat") ;
+% Input_DATA = load("C:\Users\Akkarasaknarong\Documents\GitHub\LAB_Control_Data\Data_for_Estimation\Sinewave\Sinewave_1Hz_Rec1.mat") ;
 
-Input = squeeze(TEST1{2}.Values.Data);
-Velo = squeeze(double(TEST1{1}.Values.Data));
-Time = TEST1{1}.Values.Time;
+Input_Data = load("Sinewave_1Hz_Rec2.mat") ;
+
+Input = squeeze(data{2}.Values.Data);
+Time = squeeze(data{1}.Values.Time);
+Velo = squeeze(double(data{1}.Values.Data));
 
 % Plot 
 figure(Name='Motor velocity response')
