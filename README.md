@@ -56,8 +56,13 @@ https://docs.google.com/spreadsheets/d/1YnXmOzDQ9pM9H3S1C0mhhm8Pv3uXedruE-_VNLvl
     - Amplitude : [0 0.1 0 0.2 0 0.3 0 0.4 0 0.5 0 0.6 0 0.7 0 0.8 0 0.9 0 1]
 
 ### Chirp
-- Run : 30 sec
+- Run : 45 sec
 - Block Parameter :
     - Intitial frequency : 0 Hz
-    - Target Time : 25 sec
+    - Target Time : 
+        - 20 sec
+        - 25 sec
+        - 30 sec
+        - 35 sec    
+        - 40 sec
     - Frequency at target time : 2 Hz
