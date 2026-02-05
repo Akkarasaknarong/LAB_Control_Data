@@ -18,7 +18,7 @@ motor_B = 0.00000;
 
 %% ================= 1. LOAD MODEL (Reference) =================
 % ไฟล์ที่เป็น Main Reference (Model)
-modelFile = 'D:\control\FRA233_Lab1_System_Identification-main\model\sinewavemodel15Hzconverto1Hz.mat';
+modelFile = 'C:\Users\Akkarasaknarong\Documents\GitHub\LAB_Control_Data\Result_Validation\Ramp\Validation_Ramp_25_test_5_rec1.mat';
 f1 = load(modelFile);
 d1 = f1.data;
 
@@ -37,8 +37,8 @@ fprintf('Model Loaded: %s\n', 'sinewavemodel15Hzconverto1Hz.mat');
 
 %% ================= 2. PREPARE LOOP FOR REAL FILES =================
 % กำหนด Path ของไฟล์ Real Data
-basePath = 'D:\control\FRA233_Lab1_System_Identification-main\data\sine\';
-filePrefix = 'Sinewave_1Hz_Rec'; % ส่วนต้นของชื่อไฟล์
+basePath = 'C:\Users\Akkarasaknarong\Documents\GitHub\LAB_Control_Data\Data_for_Estimation\Ramp';
+filePrefix = 'Ramp_5Percent_Rec'; % ส่วนต้นของชื่อไฟล์
 fileCount = 3; % จำนวนไฟล์ (Rec1, Rec2, Rec3)
 
 % สร้าง Figure รอไว้
