@@ -22,7 +22,6 @@ NRMSE_all    = zeros(fileCount,1);
 R2_all       = zeros(fileCount,1);
 ACC_all      = zeros(fileCount,1);
 
-
 %% ================= 1. LOAD MODEL (Reference) =================
 % ไฟล์ที่เป็น Main Reference (Model)
 modelFile = 'C:\Users\Akkarasaknarong\Documents\GitHub\LAB_Control_Data\Result_Validation\Versus\Sine_VS_Stair.mat';
