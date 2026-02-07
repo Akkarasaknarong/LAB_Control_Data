@@ -2,14 +2,14 @@ clear; clc; close all;
 
 folderPath = 'C:\Users\Akkarasaknarong\Documents\GitHub\LAB_Control_Data\Data_Difference_PWM_frequency\Sine';
 
-files = {'P3_Sine_200Hz_rec3.mat', ...
-         'P3_Sine_2000Hz_rec3.mat', ...
-         'P3_Sine_20000Hz_rec3.mat'};
+files = {'P3_Sine_200Hz_rec1.mat', ...
+         'P3_Sine_2000Hz_rec1', ...
+         'P3_Sine_20000Hz_rec1'};
 lineColors = {'r', 'g', 'b'};
 legendNames = {'200 Hz', '2000 Hz', '20000 Hz'};
 figure('Name', 'Comparison of 3 Records', 'Color', 'w');
 hold on;
-windowSize = 1;
+windowSize = 550;
 
 % Ramp 750
 % Stair 550
@@ -38,7 +38,7 @@ for i = 1:length(files)
     % plot(t, y, 'Color', lineColors{i}, 'LineWidth', 1.5);
 
     y_smooth = smoothdata(y, 'movmean', windowSize);
-    plot(t, y_smooth, 'Color', lineColors{i}, 'LineWidth', 1);
+    plot(t, y_smooth, 'Color', lineColors{i}, 'LineWidth', 2.0);
 
 end
 
